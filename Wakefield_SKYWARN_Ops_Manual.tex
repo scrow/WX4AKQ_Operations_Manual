@@ -471,7 +471,7 @@ To be eligible to serve as Area Manager, the following basic conditions must be 
 \item Must be willing and able to attend Spotter training events and provide outreach services across the assigned Operating Area throughout the year.
 \item Must have strong communication and leadership skills.  A professional background in a supervisory or management role is preferred.
 \item Must not be serving in a leadership or supervisory role with any other emergency communications organization (for example, ARES/RACES, Red Cross, VDEM, etc) where such involvement may adversely impact the ability to adequately serve SKYWARN during activations.  Exceptions may be made for short-term/interim appointments expected to last 6 months or less.
-\item Must have reliable access to the Internet and all potential frequencies and modes of communication within the assigned Operating Area (namely VHF FM, HF SSB, APRS).
+\item Must have reliable access to the Internet and all potential frequencies and modes of communication within the assigned Operating Area (namely VHF FM, HF SSB, Winlink).
 \item Must have proof of completion of current FEMA IS.100, IS.200, IS.700, and IS.800 ICS/NIMS training, and any additional courses which may be required by NWS for operation out of the WFO.
 \end{enumerate}
 
@@ -623,7 +623,7 @@ To serve as a Responder the following criteria must be met:
 \item Must be willing to travel to the WFO for SKYWARN activations, which may occur on very short notice and may run anywhere from a few hours to a couple of days.
 \item Must possess the skills necessary to work with a number of Net Control Operators, Area Managers, and NWS employees.
 \item Must be familiar with standard VHF and HF net operating procedures.
-\item Must be familiar with APRS and Winlink messaging functions, including the XASTIR software.
+\item Must be familiar with Winlink messaging functions, including the XASTIR software.
 \item Must have proof of completion of current FEMA IS.100, IS.200, IS.700, and IS.800 ICS/NIMS training, and any additional courses which may be required by NWS for operation out of the WFO.
 \end{enumerate}
 
@@ -823,7 +823,7 @@ Responders are required to complete all \nameref{nco-training} as well as a Resp
 \item Identification and use of Auxiliary SKYWARN Repeaters.
 \item Working with NWS employees to stay abreast of severe weather threats and specific areas NWS employees need reports from.
 \item Properly and effectively relaying reports from nets to NWS employees.
-\item Utilizing APRS and Winlink to manually retrieve log entries from the SKYWARN RMS.
+\item Utilizing Winlink to retrieve log entries from the SKYWARN RMS.
 \end{enumerate}
 
 Responder training should be conducted one-on-one with new Responders on-site at the WFO with the coordination of the SKYWARN Program Manager.  Responder training is valid for three years unless considerable changes in equipment or operating procedure dictate more frequent training.
@@ -1205,7 +1205,7 @@ Occasionally a Net Controller will be faced with the task of taking a report of 
 \begin{enumerate}
 \item Only request the minimum amount of information required to form the report.  The location (address, nearby intersection or landmark), number and type of injuries (for example, two adults with injuries to the legs and one child trapped under debris) will suffice.
 \item If this is an initial report for an injury or fatality, gather as much information as possible and immediately relay the information to emergency officials by telephone or radio. Call 911 and request a transfer to the appropriate county or city.  When filing the report in RMS, include all details collected.
-\item If RMS is down or unavailable and the report must be relayed over the air to the NWS, only give the minimum information necessary to convey the report.  Do not give names or other specifics unless requested by NWS, and upon receiving such a request it should go by telephone or APRS to avoid sending the information ``in the clear'' for the public to hear.
+\item If RMS is down or unavailable and the report must be relayed over the air to the NWS, only give the minimum information necessary to convey the report.  Do not give names or other specifics unless requested by NWS, and upon receiving such a request it should go by telephone or Winlink to avoid sending the information ``in the clear'' for the public to hear.
 \item Do not dwell on the situation.  Keep the net moving.  If Net Control is personally (emotionally) affected by the report, they should contact their Area Manager or another Net Controller for temporary relief.
 \item Do not discuss the information with anyone not immediately a party to the transmission.  Of course the exception is law enforcement and emergency crews responding to the incident.
 \end{enumerate}
@@ -1226,7 +1226,7 @@ The NWS has requested that urgent reports –-- such as tornadoes and funnel clo
 
 \subsection{Relaying via Radio}
 
-In the event of an Internet outage or other difficulty in our normal reporting and communication systems, Spotter reports that meet \nameref{reporting-criteria} on page \pageref{reporting-criteria} need to be relayed to the WFO by radio.  The most efficient way to do this is typically by APRS or, if Internet access is available at Net Control, through Winlink.  If there is a total computer outage at the radio desk, or if one party involved in the relay of messages does not have access to packet, Winlink, or another suitable digital messaging platform, a voice relay system should be established.
+In the event of an Internet outage or other difficulty in our normal reporting and communication systems, Spotter reports that meet \nameref{reporting-criteria} on page \pageref{reporting-criteria} need to be relayed to the WFO by radio.  The most efficient way to do this is typically by Winlink.  If there is a total computer outage at the radio desk, or if one party involved in the relay of messages does not have access to packet, Winlink, or another suitable digital messaging platform, a voice relay system should be established.
 
 This voice relay system could consist of the radio desk directly monitoring the local nets, or having an additional Net Controller serve as a relay passing critical messages from local nets to the WFO via a single HF frequency or other communication channel.
 
@@ -1290,7 +1290,7 @@ If a severe weather event or other emergency disables telephone service between 
 
 If the local repeater is still operational, an NCO with simultaneous HF and VHF access can relay reports from the local net to the WFO across the HF link. 
 
-Another alternative is to use APRS messaging.  It may be necessary to utilize a wider path (ie, \verb|WIDE1-2,WIDE2-3|) to establish the initial contact.  Observing the actual path used (such as \verb|WT0MM-1,W4RAT-5|) will eliminate the need for such a wide broadcast path on subsequent messages and should be used after the initial contact is made.  Remember that IGATE's in the impacted area will likely be inoperable.
+Winlink messaging is also a method of communicating with WX4AKQ and the WFO.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -1508,7 +1508,7 @@ The SKYWARN Amateur Radio Station consists of five radios.  There are two Yaesu 
 
 Two Kenwood TM-241A 2-meter FM transceivers are kept in secure on-site storage for use in the event of a failure in the primary Yaesu radios, or for use in future VHF data projects.  Certain NWS staff members have a key to the on-site storage facility.  If there is a need to swap a radio, notify an NWS staff member who will assist in gaining access to the equipment. 
 
-One of the Yaesu FT-2800M transceivers is used full-time for APRS applications.  If there is a need for a second radio for voice communication, the TNC can be easily disconnected from the radio's microphone and speaker jacks.  The hand microphone for the FT-2800M is be kept hanging directly next to this radio for voice use at a moment's notice. 
+One of the Yaesu FT-2800M transceivers is used full-time for digital data applications.  If there is a need for a second radio for voice communication, the TNC can be easily disconnected from the radio's microphone and speaker jacks.  The hand microphone for the FT-2800M is be kept hanging directly next to this radio for voice use at a moment's notice. 
 
 Responders are encouraged to become familiar with the operation of these radios prior to responding to the NWS office for an activation.  Where possible, electronic versions of the equipment manuals are kept on the SKYWARN computer and on the SKYWARN Amateur Radio Team web site.
 
